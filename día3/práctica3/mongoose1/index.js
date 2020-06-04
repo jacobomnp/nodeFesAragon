@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Alumno = require('./models/alumnos.js');
 
-mongoose.connect('mongodb+srv://hcjesus:dios0987@cluster0-p1uhr.gcp.mongodb.net/facultadDB?retryWrites=true', {
+mongoose.connect('mongodb+srv://usuario1:bQqgp1rlgeFpu3mW@cluster0-dddn9.mongodb.net/informacion?retryWrites=true', {
   useNewUrlParser: true
 }).then(() => { console.log('Conectado a Mongo DB Atlas')})
 .catch(err => console.log(err));
@@ -9,14 +9,14 @@ mongoose.connect('mongodb+srv://hcjesus:dios0987@cluster0-p1uhr.gcp.mongodb.net/
 function nuevoAlumno() {
 
   var alum= Alumno({
-    numeroCuenta: "1111111",
+    numeroCuenta: "336155120",
     nombre: {
-      primer: "Jesús",
-      paterno: "Hewrnandez",
-      materno: "Cabrera"
+      primer: "Alicia",
+      paterno: "Aguilar",
+      materno: "Rohán"
     },
     semestre: 6,
-    promedio: 7.99
+    promedio: 8.0
   });
 
   alum.save(function(err,data){
@@ -52,7 +52,7 @@ function nuevosAlumnos() {
   });
 }
 function main() {
-  //nuevoAlumno();
+  nuevoAlumno();
   nuevosAlumnos();
 }
 

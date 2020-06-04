@@ -1,0 +1,3 @@
+usuario1
+bQqgp1rlgeFpu3mW
+mongodb+srv://usuario1:bQqgp1rlgeFpu3mW@cluster0-dddn9.mongodb.net/informacion?retryWrites=true&w=majority

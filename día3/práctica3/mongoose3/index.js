@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Alumno = require('./models/alumnos.js');
 
-mongoose.connect('mongodb+srv://hcjesus:dios0987@cluster0-p1uhr.gcp.mongodb.net/facultadDB?retryWrites=true', {
+mongoose.connect('mongodb+srv://usuario1:bQqgp1rlgeFpu3mW@cluster0-dddn9.mongodb.net/informacion?retryWrites=true', {
   useNewUrlParser: true
 }).then(() => { console.log('Conectado a Mongo DB Atlas')})
 .catch(err => console.log(err));
@@ -16,7 +16,7 @@ function deleteAlumnoByNumCta(nc){
 }
 
 function main() {
-  //deleteAlumnoByNumCta("4444444");
+  deleteAlumnoByNumCta("4444444");
 }
 
 main();    // ejecutamos main
